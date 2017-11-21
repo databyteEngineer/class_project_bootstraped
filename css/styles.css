@@ -1,0 +1,76 @@
+
+/*******************
+    HEADER SECTION
+******************/
+
+
+
+/*******************
+    LOGO
+******************/
+
+#logo img {
+    margin: 1% 0 0 10%;;
+    border-radius: 100%;
+}
+
+#logo img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/*******************
+    NAVBAR
+******************/
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .19);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+@keyframes modalopen {
+    from{opacity: 0}
+    to {opacity: 1}
+}
+
+.close-btn {
+    color: #666666;
+    float: right;
+    font-size: 20px;
+}
+
+
+.close-btn:hover, .close-btn:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.centerBox {
+    margin: 0 auto;
+    text-align: center;
+}
